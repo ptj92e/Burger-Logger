@@ -1,6 +1,6 @@
 let Sequelize = require("sequelize");
 
-let sequelize = new Sequelize("burgerDB", "root", "", {
+let sequelize = new Sequelize("burgerDB", "ptj92e", "novaPuppy216", {
     host: "localhost",
     port: 3306,
     dialect: "mysql",
