@@ -3,7 +3,7 @@
 <h2>Burgers that have not been devoured.</h2>
 
 <ul>
-    {{#each cats}}
+    {{#each burgers}}
         {{#unless eaten}}
             <li>
                 {{name}}
@@ -16,7 +16,7 @@
 <h2>Burgers that have been devoured.</h2>
 
 <ul>
-    {{#each cats}}
+    {{#each burgers}}
         {{#if eaten}}
             <li>
                 {{name}}
