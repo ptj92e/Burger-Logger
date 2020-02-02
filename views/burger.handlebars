@@ -4,10 +4,10 @@
 
 <ul>
     {{#each cats}}
-        {{#unless eaten === false}}
+        {{#unless eaten}}
             <li>
                 {{name}}
-                <button class="" data-id="{{this.id}}">DELETE!</button>
+                <button class="devour" data-id="{{this.id}}">Devour!</button>
             </li>
         {{/unless}}
     {{/each}}
@@ -17,10 +17,10 @@
 
 <ul>
     {{#each cats}}
-        {{#if eaten === true}}
+        {{#if eaten}}
             <li>
                 {{name}}
-                <button class="" data-id="{{this.id}}">DELETE!</button>
+                <button class="delete" data-id="{{this.id}}">Delete!</button>
             </li>
         {{/if}}
     {{/each}}
@@ -31,8 +31,8 @@
 
     <div class="form-group">
         <label for="ca">Burger Name:</label>
-        <input type="text" id="ca" name="name">
+        <input type="text" id="burgerName" name="name">
     </div>
 
-    <button type="submit">Add Burger</button>
+    <button id="newBurger" type="submit">Add Burger</button>
 </form>
