@@ -1,36 +1,37 @@
 <h1>Burger Logger!</h1>
-
+<div class="notEaten">
 <h2>Burgers that have not been devoured.</h2>
 
 <ul>
-    {{#each burgers}}
-        {{#unless eaten}}
+    {{#each burger}}
+        {{#unless this.dataValues.eaten}}
             <li>
-                {{name}}
-                <button class="devour" data-id="{{this.id}}">Devour!</button>
+                <p>{{this.dataValues.name}}</p>
+                <button class="devour" data-id="{{this.dataValues.id}}">Devour!</button>
             </li>
         {{/unless}}
     {{/each}}
 </ul>
-
+</div>
+<div class="eaten">
 <h2>Burgers that have been devoured.</h2>
 
 <ul>
-    {{#each burgers}}
-        {{#if eaten}}
+    {{#each burger}}
+        {{#if this.dataValues.eaten}}
             <li>
-                {{name}}
-                <button class="delete" data-id="{{this.id}}">Delete!</button>
+                <p>{{this.dataValues.name}}</p>
             </li>
         {{/if}}
     {{/each}}
 </ul>
+</div>
 
 <h2>Add a Burger</h2>
 <form class="create-form">
 
     <div class="form-group">
-        <label for="ca">Burger Name:</label>
+        <label>Burger Name:</label>
         <input type="text" id="burgerName" name="name">
     </div>
 

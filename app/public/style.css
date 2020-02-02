@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+.eaten {
+    float: right;
+}
+.notEaten {
+    float: left;
+}
+ul {
+    justify-content: center;
+}
