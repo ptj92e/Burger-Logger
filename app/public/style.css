@@ -3,47 +3,70 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-
+    background-image: url("Burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Permanent Marker', cursive;
 }
 h1 {
     text-align: center;
     width: 100%;
+    color: white;
 }
 h2 {
     padding: 10px;
     text-align: center;
+    color: white;
+}
+img {
+    height: 300px;
+    width: 400px;
 }
 .eaten {
     float: right;
+    background-color: rgba(0, 0, 0, .5);
     border: solid;
     margin: 10px;
     margin-right: 10%;
-    width: 35%;
+    width: 25%;
 }
 .eaten li {
     background: black;
     color: white;
     margin: 5px;
+    padding: 5px;
 }
 .notEaten {
     float: left;
     border: solid;
+    background-color: rgba(0, 0, 0, .5);
     margin: 10px;
     margin-left: 10%;
-    width: 35%;
+    width: 25%;
 }
 .notEaten li {
     background: grey;
     color: white;
     margin: 5px;
+    padding: 5px;
+}
+.devour {
+    background-color: green;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 15px;
+    margin: auto;
 }
 ul {
     justify-content: center;
 }
 .input-div {
+    background-color: rgba(0, 0, 0, .5);
+    margin-left: 42.5%;
+    padding: 5px;
     border: solid;
-    width: 100%;
-    clear: both;
+    width: 200px;
+    /* clear: both; */
     justify-content: center;
 }
 .form-group {
@@ -51,12 +74,31 @@ ul {
     justify-content: center;
 }
 label {
+    color: white;
     margin: 5px;
 }
 input {
     margin: 5px;
 }
 #newBurger {
+    background-color: green;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 15px;
+    margin: auto;
+}
+#newBurger:hover {
+    background-color: white;
+    color: green;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 15px;
+    margin: auto;
+}
+button:hover {
+    background-color: white;
+    color: green;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 15px;
     margin: auto;
 }
 .create-form {
