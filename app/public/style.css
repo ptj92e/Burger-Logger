@@ -1,23 +1,64 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
+
 }
 h1 {
+    text-align: center;
+    width: 100%;
+}
+h2 {
+    padding: 10px;
     text-align: center;
 }
 .eaten {
     float: right;
     border: solid;
+    margin: 10px;
+    margin-right: 10%;
+    width: 35%;
+}
+.eaten li {
+    background: black;
+    color: white;
+    margin: 5px;
 }
 .notEaten {
     float: left;
     border: solid;
+    margin: 10px;
+    margin-left: 10%;
+    width: 35%;
+}
+.notEaten li {
+    background: grey;
+    color: white;
+    margin: 5px;
 }
 ul {
     justify-content: center;
 }
 .input-div {
-    align-self: flex-end;
-    justify-content: center;
     border: solid;
+    width: 100%;
+    clear: both;
+    justify-content: center;
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+}
+label {
+    margin: 5px;
+}
+input {
+    margin: 5px;
+}
+#newBurger {
+    margin: auto;
+}
+.create-form {
+    margin: 10px;
 }
