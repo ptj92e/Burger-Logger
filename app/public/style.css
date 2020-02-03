@@ -19,36 +19,43 @@ h2 {
     color: white;
 }
 img {
-    height: 300px;
-    width: 400px;
+    height: 20vw;
+    width: 24vw;
+    margin-left: 3.5vw;
 }
 .eaten {
     float: right;
     background-color: rgba(0, 0, 0, .5);
     border: solid;
+    border-radius: 15px;
     margin: 10px;
     margin-right: 10%;
-    width: 25%;
+    width: 24vw;
 }
 .eaten li {
-    background: black;
+    background: rgb(92, 91, 91);
     color: white;
+    border-radius: 15px;
     margin: 5px;
     padding: 5px;
+    width: 12vw;
 }
 .notEaten {
     float: left;
     border: solid;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, .5);
     margin: 10px;
     margin-left: 10%;
-    width: 25%;
+    width: 24vw;
 }
 .notEaten li {
-    background: grey;
+    background: rgb(92, 91, 91);
     color: white;
+    border-radius: 15px;
     margin: 5px;
     padding: 5px;
+    width: 12vw;
 }
 .devour {
     background-color: green;
@@ -58,7 +65,8 @@ img {
     margin: auto;
 }
 ul {
-    justify-content: center;
+    width: 15vw;
+    margin-left: 3vw;
 }
 .input-div {
     background-color: rgba(0, 0, 0, .5);
@@ -66,7 +74,6 @@ ul {
     padding: 5px;
     border: solid;
     width: 200px;
-    /* clear: both; */
     justify-content: center;
 }
 .form-group {
@@ -79,6 +86,8 @@ label {
 }
 input {
     margin: 5px;
+    background-color: rgb(92, 91, 91);
+    color: white;
 }
 #newBurger {
     background-color: green;
