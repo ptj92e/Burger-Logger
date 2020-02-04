@@ -2,8 +2,8 @@ let Sequelize = require("sequelize");
 
 let sequelize = null;
 
-if (JAWSDB_URL) {
-    sequelize = new Sequelize(JAWSDB_URL, {
+if (process.env.JAWSDB_URL) {
+    sequelize = new Sequelize(process.env.JAWSDB_URL, {
         dialect: "postgres",
         protocol: "postgres",
         port: match[4],
