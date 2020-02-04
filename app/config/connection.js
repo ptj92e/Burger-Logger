@@ -2,7 +2,7 @@ let Sequelize = require("sequelize");
 
 let sequelize = null;
 
-if (process.env.JAWSDB_URL) {
+if (JAWSDB_URL) {
     sequelize = new Sequelize(JAWSDB_URL, {
         dialect: "postgres",
         protocol: "postgres",
