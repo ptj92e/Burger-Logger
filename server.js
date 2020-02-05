@@ -13,6 +13,10 @@ app.set("view engine", "handlebars");
 
 require("./app/routes/api-routes.js")(app);
 
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
+let db = require("./app/models");
+
+db.sequelize.sync().then(function() {
+    app.listen(PORT, function() {
+        console.log("App listening on PORT " + PORT);
+    });
 });

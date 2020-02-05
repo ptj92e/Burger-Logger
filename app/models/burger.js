@@ -1,15 +1,10 @@
-let Sequelize = require("sequelize");
-
-let sequelize = require("../config/connection.js");
-
-let Burger = sequelize.define("burger", {
-    name: Sequelize.STRING,
-    eaten: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: 0
-    }
-});
-
-Burger.sync();
-
-module.exports = Burger;
+module.exports = function(sequelize, DataTypes) {
+    let Burger = sequelize.define("burger", {
+        name: DataTypes.STRING,
+        eaten: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: 0
+        }
+    });
+    return Burger;
+};
