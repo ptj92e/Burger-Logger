@@ -16,10 +16,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "ptj92e",
-    "password": "novaPuppy216",
-    "database": "burgerDB",
-    "host": "localhost",
+    "username": "meoxfehip35zumhc",
+    "password": "v3q6zlhev19dgo19",
+    "database": "zfn8i5k56ddy0v2x",
+    "host": "tk3mehkfmmrhjg0b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   }
