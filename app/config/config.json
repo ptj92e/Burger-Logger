@@ -1,16 +1,16 @@
 {
   "development": {
-    "username": "ptj92e",
-    "password": "novaPuppy216",
-    "database": "burgerDB",
+    "username": "",
+    "password": "",
+    "database": "",
     "host": "localhost",
     "port": 3306,
     "dialect": "mysql"
   },
   "test": {
-    "username": "ptj92e",
-    "password": "novaPuppy216",
-    "database": "burgerDB",
+    "username": "",
+    "password": "",
+    "database": "",
     "host": "localhost",
     "port": 3306,
     "dialect": "mysql"
